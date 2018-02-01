@@ -1,0 +1,20 @@
+{
+  "name": "arewedistributedyet",
+  "version": "1.0.0",
+  "description": "The test suite to unlock the peer web ⚡🌐🔑",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ipfs-css": "^0.1.0",
+    "parcel-bundler": "^1.5.1",
+    "tachyons": "^4.9.1"
+  },
+  "scripts": {
+    "start": "parcel src/index.html --out-dir docs",
+    "clean": "rm -rf ./docs",
+    "build": "parcel build src/index.html --public-url ./ --out-dir docs",
+    "deploy": "ipfs add -r -q docs | tail -n1 >versions/current; cat versions/current >> versions/history; cat versions/current"
+  },
+  "author": "olizilla",
+  "license": "MIT"
+}
