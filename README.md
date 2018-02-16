@@ -13,12 +13,16 @@ _The test suite to unlock the peer web_ ⚡🌐🔑
 - `npm run build` - Build the production ready site to `./docs`
 - `npm run deploy` - Add `./docs` to [IPFS]
 
+# Inspiration
+
+- https://jakearchibald.github.io/isserviceworkerready/
+- https://www.chromestatus.com/features
+- http://www.areweplayingyet.org/
+
 ## License
 
 Documents are [CC-BY-SA 3.0] license © 2018 Protocol Labs Inc.
 Code is [MIT](./LICENSE) © 2018 Protocol Labs Inc.
-
-
 
 [IPFS]: https://ipfs.io
 [parcel]: https://parceljs.org
