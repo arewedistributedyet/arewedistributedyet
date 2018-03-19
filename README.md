@@ -18,6 +18,7 @@ _The test suite to unlock the peer web_ ⚡🌐🔑
 - https://jakearchibald.github.io/isserviceworkerready/
 - https://www.chromestatus.com/features
 - http://www.areweplayingyet.org/
+- https://github.com/datprotocol/DEPs
 
 ## License
 

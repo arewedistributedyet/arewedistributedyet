@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "The test suite to unlock the peer web ⚡🌐🔑",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@browser-logos/brave": "^3.0.0",
+    "@browser-logos/chrome": "^1.0.4",
+    "@browser-logos/chromium": "^1.0.2",
+    "@browser-logos/edge": "^1.0.3",
+    "@browser-logos/electron": "^1.0.0",
+    "@browser-logos/firefox": "^2.0.0",
+    "@browser-logos/safari": "^1.0.2"
+  },
   "devDependencies": {
-    "ipfs-css": "^0.1.0",
+    "ipfs-css": "^0.3.0",
     "parcel-bundler": "^1.5.1",
     "tachyons": "^4.9.1"
   },
