@@ -1,8 +1,8 @@
-{{ $id :=  (replace .topic.name " " "-" | lower) }}
-<article id="{{ .id }}">
+{{ $id :=  (replace .topic.name " " "-" ) | lower }}
+<article id="{{ $id }}">
   <div class="cf ph2-ns pb4">
     <div class="fl w-100 w-30-ns pa2 lh-copy">
-      <a href='#p2p' class='link navy'>
+      <a href='#{{ $id }}' class='link navy'>
         <h1 class='fw2 f3'>
           {{ .topic.name }}
         </h1>

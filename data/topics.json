@@ -1,7 +1,7 @@
 [
   {
     "name": "P2P enthusiasm",
-    "description": "Are they excited about the distributed web and are they publically committed to making it happen?",
+    "description": "Are they excited about the distributed web and are they publicly committed to making it happen?",
     "beaker": {
       "level": 2,
       "details": "Yes! _a peer-to-peer browser with tools to create and host websites. Don't just browse the Web, build it._ https://beakerbrowser.com"

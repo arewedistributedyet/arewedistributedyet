@@ -2,11 +2,11 @@
 {{ range .browsers }}
   {{ $browser := (index $topic .id) }}
   <div class="pt3">
-    <label class='db fw2 f6 ttu tracked silver' style='width:70px'>
+    <label class='db fw2 f6 ttu tracked silver'>
       {{ .name }}
     </label>
     {{ if (and $browser $browser.details) }}
-      <span class=''>
+      <span class='nested-links'>
         {{ $browser.details | markdownify }}
       </span>
     {{ else }}
