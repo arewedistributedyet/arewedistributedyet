@@ -1,0 +1,21 @@
+{{ $id :=  (replace .topic.name " " "-" | lower) }}
+<article id="{{ .id }}">
+  <div class="cf ph2-ns pb4">
+    <div class="fl w-100 w-30-ns pa2 lh-copy">
+      <a href='#p2p' class='link navy'>
+        <h1 class='fw2 f3'>
+          {{ .topic.name }}
+        </h1>
+      </a>
+      <p class='f6 fw4'>{{ .topic.description }}</p>
+    </div>
+    <div class="fl w-100 w-70-ns pa2">
+      <div>
+        {{ partial "browsers.html" . }}
+      </div>
+      <div class="pt2 lh-copy">
+        {{ partial "details.html" . }}
+      </div>
+    </div>
+  </div>
+</article>

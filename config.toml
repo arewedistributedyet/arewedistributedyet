@@ -1,0 +1,10 @@
+baseURL = "https://arewedistributedyet.com"
+relativeURLs = true
+
+[params]
+  domain = "arewedistributedyet.com"
+  name = "Are we distributed yet?"
+  title = "Are we distributed yet?"
+  description = "Let's make peer-to-peer a first-class part of the web."
+  author = "olizilla"
+  

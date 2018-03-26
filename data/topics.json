@@ -1,0 +1,97 @@
+[
+  {
+    "name": "P2P enthusiasm",
+    "description": "Are they excited about the distributed web and are they publically committed to making it happen?",
+    "beaker": {
+      "level": 2,
+      "details": "Yes! _a peer-to-peer browser with tools to create and host websites. Don't just browse the Web, build it._ https://beakerbrowser.com"
+    },
+    "brave": {
+      "level": 1,
+      "details": "Supportive. https://github.com/brave/browser-laptop/issues/9556"
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 1,
+      "details": "Supportive: <a href='https://bugzilla.mozilla.org/show_bug.cgi?id=1435798'>https://bugzilla.mozilla.org/show_bug.cgi?id=1435798</a>"
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
+    "name": "WebRTC issues",
+    "description": "Committed to fixing WebRTC bugs an performance issues",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 0
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 1,
+      "details": "Supportive"
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
+    "name": "DNS lookup API",
+    "description": "Support for DNSLINK and generic DNS queries",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 0
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 0
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
+    "name": "Programmable Custom Protocol handlers",
+    "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 0
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 0
+    },
+    "safari": {
+      "level": 0
+    }
+  }
+]

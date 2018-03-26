@@ -47,6 +47,7 @@ This example shows how you would add a handler for the `ipfs` protocol and have 
 https://github.com/beakerbrowser/beaker/blob/984188245e69fe8035688292399c3f5b1aa51c25/app/background-process/protocols/dat.js#L53)
 
 ## Control how content origin is determined
+
 - Sub origin https://github.com/ipfs/in-web-browsers/issues/66
 - Control How Origin Is Calculated for _originless_ content addressed uris
 - See: https://bugzilla.mozilla.org/show_bug.cgi?id=1271553#c47

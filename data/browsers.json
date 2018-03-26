@@ -1,0 +1,26 @@
+[
+  {
+    "id": "beaker",
+    "name": "Beaker"
+  },
+  {
+    "id": "brave",
+    "name": "Brave"
+  },
+  {
+    "id": "chrome",
+    "name": "Chrome"
+  },
+  {
+    "id": "edge",
+    "name": "Edge"
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox"
+  },
+  {
+    "id": "safari",
+    "name": "Safari"
+  }
+]

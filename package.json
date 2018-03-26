@@ -1,27 +1,34 @@
 {
   "name": "arewedistributedyet",
   "version": "1.0.0",
-  "description": "The test suite to unlock the peer web ⚡🌐🔑",
-  "main": "index.js",
-  "dependencies": {
+  "description": "Let's unlock the peer web ⚡🌐🔑",
+  "scripts": {
+    "test": "say sorry",
+    "start": "hugo server -ws .",
+    "deploy": "hugo && ipfs add -r public"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@browser-logos/beaker": "^1.0.0",
     "@browser-logos/brave": "^3.0.0",
     "@browser-logos/chrome": "^1.0.4",
     "@browser-logos/chromium": "^1.0.2",
     "@browser-logos/edge": "^1.0.3",
     "@browser-logos/electron": "^1.0.0",
     "@browser-logos/firefox": "^2.0.0",
-    "@browser-logos/safari": "^1.0.2"
-  },
-  "devDependencies": {
+    "@browser-logos/safari": "^1.0.2",
+    "imagemin-cli": "^3.0.0",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^6.0.0",
     "ipfs-css": "^0.3.0",
-    "parcel-bundler": "^1.5.1",
-    "tachyons": "^4.9.1"
-  },
-  "scripts": {
-    "start": "parcel src/index.html --out-dir docs",
-    "clean": "rm -rf ./docs",
-    "build": "parcel build src/index.html --public-url ./ --out-dir docs",
-    "deploy": "ipfs add -r -q docs | tail -n1 >versions/current; cat versions/current >> versions/history; cat versions/current"
+    "less": "^2.7.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "nodemon": "^1.11.0",
+    "standard": "^11.0.1",
+    "tachyons": "^4.9.1",
+    "uglify-js": "^3.0.23"
   },
   "author": "olizilla",
   "license": "MIT"

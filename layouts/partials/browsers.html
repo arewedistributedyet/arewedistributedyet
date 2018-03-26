@@ -1,0 +1,9 @@
+{{ $topic := .topic }}
+{{ range .browsers }}
+  {{ $browser := (index $topic .id) }}
+  {{ $level := (default 0 $browser.level) }}
+  <div class='dib pa1 mr1 mb2 level{{$level}}'>
+    <img style='width:80px; height:80px;' src="browser-logos/{{.id}}/{{.id}}_256x256.png" alt="{{.name}}" title="{{.name}}" />
+  </div>
+{{end}}
+
