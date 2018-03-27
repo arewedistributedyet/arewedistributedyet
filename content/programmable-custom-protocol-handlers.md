@@ -14,7 +14,7 @@ An api that allows a WebExtension to register itself as **the handler for new pr
 
 ## Motivation
 
-Users of a decentralized web want to get content from a network peers rather than a specific server.
+Users of a decentralized web want to get content from a network of peers rather than a specific server.
 
 Right now, only possible to register custom protocols handlers statically, from the `manifest.json`, where a uri is mapped to a url template, and a separate, centralised service must be maintained to handler the mapping. The custom protocol handler can only redirect the user to an (http) url, it cannot return content directly to the browser. The redirect is visible in the browsers url bar, and the original uri is no longer visible to the user.
 
