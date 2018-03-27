@@ -65,7 +65,7 @@ minify-img: install
 
 dev: install css js
 	$(PREPEND)( \
-		$(NPMBIN)/nodemon --watch css --exec "$(NPMBIN)/lessc --clean-css --autoprefix less/main.less static/css/main.css" & \
+		$(NPMBIN)/nodemon --watch less -e less --exec "$(NPMBIN)/lessc --clean-css --autoprefix less/main.less static/css/main.css" & \
 		hugo server -w \
 	)
 

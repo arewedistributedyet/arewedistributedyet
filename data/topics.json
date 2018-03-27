@@ -50,8 +50,9 @@
   },
 
   {
-    "name": "Programmable Custom Protocol handlers",
+    "name": "Programmable custom protocol handlers",
     "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
+    "doc": "programmable-custom-protocol-handlers",
     "beaker": {
       "level": 0
     },

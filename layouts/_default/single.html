@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class='sans-serif m0 pb6'>
+  {{ partial "header.html" . }}
+  <div class="Doc">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</body>
+</html>

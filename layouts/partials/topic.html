@@ -10,6 +10,9 @@
       {{ with .topic.description }}
         <p class='f6 fw4'>{{ . | markdownify }}</p>
       {{ end }}
+      {{ with .topic.doc }}
+         <a class='f6 fw4 blue' href='{{ . }}'>Read more</a>
+      {{ end }}
     </div>
     <div class="fl w-100 w-70-ns pa2">
       <div>

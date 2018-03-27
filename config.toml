@@ -1,5 +1,7 @@
 baseURL = "https://arewedistributedyet.com"
 relativeURLs = true
+title = "Are we distributed yet?"
+languageCode = "en-us"
 
 [params]
   domain = "arewedistributedyet.com"
@@ -7,4 +9,3 @@ relativeURLs = true
   title = "Are we distributed yet?"
   description = "Let's make peer-to-peer a first-class part of the web."
   author = "olizilla"
-  
