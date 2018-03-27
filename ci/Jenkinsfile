@@ -1,5 +1,4 @@
 website([
-  website: 'arewedistributedyet.com', // not a real domain yet
-  record: '_dnslink', // not a real record yes
-  disable_publish: true // we're not ready to publish this yet
+  website: 'arewedistributedyet.com',
+  record: '_dnslink'
 ])
