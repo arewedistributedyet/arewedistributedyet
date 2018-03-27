@@ -53,7 +53,7 @@ css: install
 	$(PREPEND)$(NPMBIN)/lessc --clean-css --autoprefix less/main.less static/css/main.css $(APPEND)
 
 js: install
-	$(PREPEND)cp -r js/ static/js $(APPEND)
+	$(PREPEND)cp -r js/ static/js || true $(APPEND)
 
 minify: install minify-js minify-img
 
@@ -61,7 +61,7 @@ minify-js: install
 	$(PREPEND)find static/js -name '*.js' -exec $(NPMBIN)/uglifyjs {} --compress --output {} $(APPEND) \;
 
 minify-img: install
-	$(PREPEND)find static/img -type d -exec $(NPMBIN)/imagemin {}/* --out-dir={} $(APPEND) \;
+	$(PREPEND)find static/img -type d -exec $(NPMBIN)/imagemin {}/* --out-dir={} || true $(APPEND) \;
 
 dev: install css js
 	$(PREPEND)( \
