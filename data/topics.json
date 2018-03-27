@@ -56,7 +56,8 @@
       "level": 0
     },
     "brave": {
-      "level": 0
+      "level": 1,
+      "details": "WIP: https://github.com/brave/muon/pull/507"
     },
     "chrome": {
       "level": 0
@@ -65,7 +66,8 @@
       "level": 0
     },
     "firefox": {
-      "level": 0
+      "level": 1,
+      "details": "Being discussed: https://bugzilla.mozilla.org/show_bug.cgi?id=1271553"
     },
     "safari": {
       "level": 0
@@ -74,7 +76,7 @@
 
   {
     "name": "DNS lookup API",
-    "description": "Support for DNSLINK and generic DNS queries",
+    "description": "Allow WebExtensions to query DNS for `A`/`AAAA`/`TXT`/`SRV` records.",
     "beaker": {
       "level": 0
     },
@@ -88,7 +90,8 @@
       "level": 0
     },
     "firefox": {
-      "level": 0
+      "level": 1,
+      "details": "Shipped support for `A`/`AAAA` lookups. [issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1373640) [docs](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/dns). `SRV` and `TXT` support to be discussed."
     },
     "safari": {
       "level": 0

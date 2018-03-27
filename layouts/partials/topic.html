@@ -7,7 +7,9 @@
           {{ .topic.name }}
         </h1>
       </a>
-      <p class='f6 fw4'>{{ .topic.description }}</p>
+      {{ with .topic.description }}
+        <p class='f6 fw4'>{{ . | markdownify }}</p>
+      {{ end }}
     </div>
     <div class="fl w-100 w-70-ns pa2">
       <div>
