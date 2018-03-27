@@ -27,7 +27,7 @@
 
   {
     "name": "WebRTC issues",
-    "description": "Committed to fixing WebRTC bugs an performance issues",
+    "description": "Committed to fixing WebRTC bugs and performance issues",
     "beaker": {
       "level": 0
     },
@@ -50,8 +50,8 @@
   },
 
   {
-    "name": "DNS lookup API",
-    "description": "Support for DNSLINK and generic DNS queries",
+    "name": "Programmable Custom Protocol handlers",
+    "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
     "beaker": {
       "level": 0
     },
@@ -73,8 +73,8 @@
   },
 
   {
-    "name": "Programmable Custom Protocol handlers",
-    "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
+    "name": "DNS lookup API",
+    "description": "Support for DNSLINK and generic DNS queries",
     "beaker": {
       "level": 0
     },
