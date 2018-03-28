@@ -1,9 +1,9 @@
 {{ $id :=  (replace .topic.name " " "-" ) | lower }}
 <article id="{{ $id }}">
-  <div class="cf pl2 pt4 pb3 bt b--near-white">
+  <div class="cf pl2 pt3 pt4-l pb3 bt b--near-white">
     <div class="fl w-30-l pa2 lh-copy">
       <a href='#{{ $id }}' class='link navy'>
-        <h1 class='mt0 fw2 f3 lh-title'>
+        <h1 class='mt0 fw2 f2 f3-l lh-title'>
           {{ .topic.name }}
         </h1>
       </a>
@@ -11,7 +11,7 @@
         <p class='f5 f6-l fw4'>{{ . | markdownify }}</p>
       {{ end }}
       {{ with .topic.doc }}
-         <a class='f6 fw4 blue' href='{{ . }}'>Read more</a>
+         <a class='db pb2 f5 f6-l fw4 link blue' href='{{ . }}'>Read more</a>
       {{ end }}
     </div>
     <div class="fl w-100 w-70-l pa2">
