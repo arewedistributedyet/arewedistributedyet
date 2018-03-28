@@ -1,16 +1,16 @@
 {{ $topic := .topic }}
 {{ range .browsers }}
   {{ $browser := (index $topic .id) }}
-  <div class="pt2">
+  <div class="pt3">
     <label class='db fw5 f7 ttu tracked navy-muted lh-copy pb1'>
       {{ .name }}
     </label>
     {{ if (and $browser $browser.details) }}
-      <span class='nested-links'>
+      <div class='nested-links overflow-hidden'>
         {{ $browser.details | markdownify }}
-      </span>
+      </div>
     {{ else }}
-      <span class='gray'>Unknown</span>
+      <div class='moon-gray'>Unknown</div>
     {{end}}
   </div>
 {{ end }}

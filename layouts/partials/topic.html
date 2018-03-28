@@ -1,7 +1,7 @@
 {{ $id :=  (replace .topic.name " " "-" ) | lower }}
 <article id="{{ $id }}">
-  <div class="cf pl2 pb4">
-    <div class="fl w-100 w-30-l pa2 lh-copy">
+  <div class="cf pl2 pt4 pb3 bt b--near-white">
+    <div class="fl w-30-l pa2 lh-copy">
       <a href='#{{ $id }}' class='link navy'>
         <h1 class='mt0 fw2 f3 lh-title'>
           {{ .topic.name }}
