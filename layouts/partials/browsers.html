@@ -2,7 +2,7 @@
 {{ range .browsers }}
   {{ $browser := (index $topic .id) }}
   {{ $level := (default 0 $browser.level) }}
-  <div class='dib pa1 mr1 mb2 level{{$level}}'>
-    <img class='w-third' style='width:80px; height:80px;' src="img/browser-logos/{{.id}}/{{.id}}_256x256.png" alt="{{.name}}" title="{{.name}}" />
+  <div class='dib pa1 mr1 mb2 level{{$level}} browser-icon'>
+    <img src="img/browser-logos/{{.id}}/{{.id}}_256x256.png" alt="{{.name}}" title="{{.name}}" />
   </div>
 {{end}}
