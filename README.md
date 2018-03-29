@@ -2,8 +2,9 @@
 
 _Let's unlock the peer-to-peer web_ ⚡🌐🔑
 
-- Built with [hugo]
-- Styled with [tachyons] & [ipfs-css]
+> ...a comprehensive, prioritized list that we can point browser people too. Ideally with a brief description which features each of the items unlocks. There are things which are absolute deal-breakers (e.g. proper protocol handlers), and things which are important but not essential. The list should convey this importance and priorities.
+
+> @lgierth
 
 ## Usage
 
@@ -11,6 +12,9 @@ _Let's unlock the peer-to-peer web_ ⚡🌐🔑
 - `make` - Build the production ready site to `./public`
 - `make deploy` - Add `./public` to [IPFS]
 - `make help` - For more info
+
+- Built with [hugo]
+- Styled with [tachyons] & [ipfs-css]
 
 ## Adding content
 
