@@ -3,8 +3,8 @@ title: "DNS lookup API"
 date: 2018-03-29T14:49:22+02:00
 ---
 
-An API that allows a WebExtension to lookup for arbitrary DNS records in highly
-efficient manner.
+An API that allows a WebExtension to perform DNS lookups for arbitrary record
+types in a highly efficient manner.
 
 ## Motivation
 
@@ -19,47 +19,44 @@ There are two DNS resource record types that are relevant to this objective:
 [publishing PGP pubkeys][3], [domain ownership verification][4],
 ['serverless' redirect services][5] and more.
 
-IPFS uses `TXT` record for publishing [dnslink][6] as a means of exposing content
-from IPFS Path under `/ipns/${fqdn}/` namespace. Validation of `/ipns/` paths
-includes DNS lookup to verify if `/ipns/${fqdn}` is backed by the presence of
-dnslink `TXT` record. 
+IPFS uses `TXT` records for publishing [dnslink][6] as a means of exposing content
+from an IPFS Path under `/ipns/${fqdn}/` namespace. Validation of `/ipns/` paths
+includes a DNS lookup to verify if `/ipns/${fqdn}` is backed by the presence of
+a dnslink `TXT` record. 
 
-Without dedicated API for DNS lookups browser extensions are forced to use
+Without a dedicated API for DNS lookups browser extensions are forced to use
 third-party [DNS-over-HTTPS][7] services.
 This workaround comes at a price:
 
-- Dependency on hardcoded third party lookup service introduces the single
+- Dependency on hardcoded third party lookup service introduces a single
   point of failure.  It also makes MITM attacks easier and increases
   probability of leaking private information.
 
-- Sending HTTP GET for each query is much slower than native DNS client already
- present in web browser. Overhead makes it not feasible to run
- `TXT` lookup too often or during time-critical paths such as
+- Sending an HTTP GET for each query is much slower than native DNS client already
+ present in web browser.
+ The overhead is particularly undesirable during time-critical paths such as
  [blocking `onBeforeRequest` handler][8] (degrades browsing performance, kills battery).
 
 
 
 ## Usage Documentation
 
-Recently added [`browser.dns.resolve`][1] API from Firefox 60 is a good starting point.
+The recently added [`browser.dns.resolve`][1] API from Firefox 60 is a good starting point.
+There should be an additional parameter that enables extension to lookup for
+record types different from the default `A`.
 
-Example below shows how lookup for `A` record works:
+Example below shows how a lookup for `TXT` record could work in mentioned API:
 
 ```js
 function resolved(record) {
   console.log(record.addresses);
 }
 
-let resolving = browser.dns.resolve("example.com");
+let resolving = browser.dns.resolve("ipfs.io", ["rr_type_txt"]);
 resolving.then(resolved);
 
-// > e.g. Array [ "73.284.240.12" ]
+// > e.g. Array [ "dnslink=/ipfs/QmYNQJoKGNHTpPxCBPh9KkDpaExgd2duMa3aF6ytMpHdao" ]
 ```
-
-### What Is Missing
-
-There should be an additional parameter that enables WebExtension to lookup for
-record types different from the default `A`, namely `TXT`.
 
 ## Notes
 
