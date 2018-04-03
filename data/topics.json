@@ -78,6 +78,7 @@
   {
     "name": "DNS lookup API",
     "description": "Allow WebExtensions to query DNS for `A`/`AAAA`/`TXT`/`SRV` records.",
+    "doc": "dns-lookup-api",
     "beaker": {
       "level": 0
     },
@@ -92,7 +93,7 @@
     },
     "firefox": {
       "level": 1,
-      "details": "Shipped support for `A`/`AAAA` lookups. [issue](https://bugzilla.mozilla.org/show_bug.cgi?id=1373640) [docs](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/dns). `SRV` and `TXT` support to be discussed."
+      "details": "Support for `A`/`AAAA` lookups via [`browser.dns.resolve` API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/dns/resolve) ([Bug 1373640](https://bugzilla.mozilla.org/show_bug.cgi?id=1373640)).<br> Missing `SRV` ([Bug 14328](https://bugzilla.mozilla.org/show_bug.cgi?id=14328)) and `TXT` ([Bug 1449171](https://bugzilla.mozilla.org/show_bug.cgi?id=1449171))."
     },
     "safari": {
       "level": 0
