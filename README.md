@@ -16,13 +16,9 @@ Built with [hugo], styled with [tachyons] & [ipfs-css]
 
 ## Contributing
 
-This site documents the browser apis, features and bug fixes needed to improve the user-experience of the distributed web.
+This site documents the browser features and fixes needed to improve the user-experience of the distributed web. **Come join us** in the <a href="https://www.irccloud.com/invite?channel=%23ipfs-in-web-browsers&amp;hostname=irc.freenode.net&amp;port=6697&amp;ssl=1"> #ipfs-in-web-browsers channel on irc.freenode.net</a> and feel free to ask questions!
 
-**Come join us** in the <a href="https://www.irccloud.com/invite?channel=%23ipfs-in-web-browsers&amp;hostname=irc.freenode.net&amp;port=6697&amp;ssl=1"> #ipfs-in-web-browsers channel on irc.freenode.net</a> and feel free to ask questions!
-
-**To suggest a new topic** create a new issue for it on the GitHub repo https://github.com/ipfs-shipyard/arewedistributedyet/issue where we can figure out the details.
-
-Each topic should define what is needed, and what feature it unlocks. There is an issue template to guide the process. We'll discuss the issue and look for consensus on the ideal specification, and encourage p2p protocol developers and browser developers to help refine each issue.
+**To suggest a new topic** create a [new issue](https://github.com/ipfs-shipyard/arewedistributedyet/issue) for it where we can figure out the details. Each topic should define what is needed, and what feature it unlocks. There is an issue template to guide the process. We'll discuss the issue and look for consensus on the ideal specification, and encourage p2p protocol developers and browser developers to help refine each issue.
 
 **To submit a proposal** create a new markdown document in the `./content` directory by running
 
