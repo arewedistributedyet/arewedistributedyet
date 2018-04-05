@@ -3,24 +3,24 @@
   <head>
     {{ partial "head.html" . }}
   </head>
-  <body class='sans-serif ma0 pb6'>
+  <body class='sans-serif ma0'>
     {{ partial "header.html" . }}
-    <div class="center page-container">
+    <div class="center page-container" role="main">
       <div class="cf ph2-ns">
         <div class="fr-l w-70-l pa2">
           <div class='pl2 pl0-ns pv4' style='max-width:650px'>
             <p class='ma0 f4 lh-copy'>
-              <strong>We're close.</strong> We need to fix bugs in existing p2p features like webRTC
+              <strong>We're close.</strong> We need to fix issues in existing p2p features like webRTC
           and rally support for new browser apis, to create a level playing field
           where a great user experience doesn't require a centralized system.
             </p>
           </div>
         </div>
       </div>
-
       {{ range $.Site.Data.topics }}
         {{ partial "topic.html"  (dict "topic" . "browsers" $.Site.Data.browsers) }}
       {{ end }}
     </div>
+    {{ partial "footer.html" . }}
   </body>
 </html>
