@@ -21,6 +21,23 @@
         {{ partial "topic.html"  (dict "topic" . "browsers" $.Site.Data.browsers) }}
       {{ end }}
     </div>
+
+    <div class="cf ph2-ns">
+      <div class="fr-l w-70-l pa2">
+        <div class='pl2 pl0-ns pv4' style='max-width:650px'>
+          <p class='ma0 f4 lh-copy'>
+            <h2>Help us Build a Better Web</h2>
+
+            <strong><a href="https://groups.google.com/forum/#!forum/dweb-in-browsers">Join the Mailing List</a></strong><br><br>
+
+            <strong><a href="https://github.com/ipfs-shipyard/arewedistributedyet">Edit this site on Github</a></strong><br><br>
+
+            IRC: #ipfs-in-web-browsers on Freenode (<strong><a href="http://webchat.freenode.net?channels=%23ipfs-in-web-browsers&uio=d4">web link</a></strong>)
+          </p>
+        </div>
+      </div>
+    </div>
+
     {{ partial "footer.html" . }}
   </body>
 </html>
