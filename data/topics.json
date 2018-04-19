@@ -76,6 +76,30 @@
   },
 
   {
+    "name": "Control security context",
+    "description": "Allow WebExtensions to control how Origin-based security context is defined.",
+    "doc": "control-origin-security-context",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 0
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 0
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
     "name": "DNS lookup API",
     "description": "Allow WebExtensions to query DNS for `A`/`AAAA`/`TXT`/`SRV` records.",
     "doc": "dns-lookup-api",
