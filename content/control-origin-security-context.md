@@ -34,8 +34,11 @@ approach obfuscates canonical representations of content-addressing and is not
 feasible for local p2p services listening on `127.0.0.1`.
 
 Historically, same-origin policies were extended to define roughly compatible
-security boundaries for other web technologies, such as Silverlight, Adobe
-Flash, or Adobe Acrobat.  We aim to do the same for distributed web.
+security boundaries for other web technologies, such as
+[Silverlight](http://web.archive.org/web/20180420144333/https://blogs.msdn.microsoft.com/silverlightws/2008/03/30/some-tips-on-cross-domain-calls/),
+[Adobe Flash](https://web.archive.org/web/20151119041726/http://blogs.adobe.com/security/2009/11/flash_content_and_the_same-ori.html),
+or [Adobe Acrobat](http://web.archive.org/web/20171111163433/https://www.adobe.com/devnet-docs/acrobatetk/tools/AppSec/xdomain.html).
+We aim to do the same for distributed web.
 
 
 ## Usage Documentation
