@@ -57,6 +57,11 @@ special case of URI without an authority component and suggests that an opaque
 string can be used as a globally unique identifier as/instead of location-based
 authority.
 
+This means an URL with hash-as-content-root (eg. `ipfs://<hash>`, `dat://<hash>`) 
+will have distinct Origin, but if we want to unify the distributed web under
+the `dweb` URI (`dweb:/<namespace>/<hash>`) it won't be enough without ability
+to control how Origin is calculated.
+
 
 ### Suborigins for HTTP gateways
 
