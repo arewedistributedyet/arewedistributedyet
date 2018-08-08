@@ -16,7 +16,8 @@ Built with [hugo], styled with [tachyons] & [ipfs-css]
 
 ## Contributing
 
-This site documents the browser features and fixes needed to improve the user-experience of the distributed web. **Come join us** in the <a href="https://www.irccloud.com/invite?channel=%23ipfs-in-web-browsers&amp;hostname=irc.freenode.net&amp;port=6697&amp;ssl=1"> #ipfs-in-web-browsers channel on irc.freenode.net</a> and feel free to ask questions!
+This site documents the browser features and fixes needed to improve the user-experience of the distributed web.
+
 
 **To suggest a new topic** create a [new issue](https://github.com/ipfs-shipyard/arewedistributedyet/issue) for it where we can figure out the details. Each topic should define what is needed, and what feature it unlocks. There is an issue template to guide the process. We'll discuss the issue and look for consensus on the ideal specification, and encourage p2p protocol developers and browser developers to help refine each issue.
 
@@ -67,6 +68,10 @@ Where
 - `level: 2` means the idea is shipped or they are publicly committed to shipping it.
 
 Once there is a published proposal document for a topic, you can add a link to it by adding a `doc` property with the proposal filename (without it's file extension) as the value, in the relevant topic object in `data/topics.json`.
+
+**Got questions not covered here?** Fill an issue or ask in the  <a
+href="https://webchat.freenode.net/?channels=%23ipfs-in-web-browsers&uio=d4">
+#ipfs-in-web-browsers</a> IRC channel on chat.freenode.net
 
 ## Inspiration
 

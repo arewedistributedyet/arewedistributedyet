@@ -8,7 +8,7 @@
     },
     "brave": {
       "level": 1,
-      "details": "Supportive. https://github.com/brave/browser-laptop/issues/9556"
+      "details": "Supportive: [brave/issues/9556](https://github.com/brave/browser-laptop/issues/9556)"
     },
     "chrome": {
       "level": 0
@@ -18,7 +18,7 @@
     },
     "firefox": {
       "level": 1,
-      "details": "Supportive: <a href='https://bugzilla.mozilla.org/show_bug.cgi?id=1435798'>https://bugzilla.mozilla.org/show_bug.cgi?id=1435798</a>"
+      "details": "Supportive, tracking APIs for p2p web applications in [bug 1435798](https://bugzilla.mozilla.org/show_bug.cgi?id=1435798)"
     },
     "safari": {
       "level": 0
@@ -50,15 +50,13 @@
   },
 
   {
-    "name": "Programmable custom protocol handlers",
-    "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
-    "doc": "programmable-custom-protocol-handlers",
+    "name": "Local Discovery",
+    "description": "Allow a WebExtension to do DNS-Based Service Discovery API as per [RFC6763](https://tools.ietf.org/html/rfc6763).",
     "beaker": {
       "level": 0
     },
     "brave": {
-      "level": 1,
-      "details": "WIP: https://github.com/brave/muon/pull/507"
+      "level": 0
     },
     "chrome": {
       "level": 0
@@ -68,7 +66,57 @@
     },
     "firefox": {
       "level": 1,
-      "details": "Being discussed: https://bugzilla.mozilla.org/show_bug.cgi?id=1271553"
+      "details": "Supportive, prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [DNS-SD API](https://github.com/mozilla/libdweb/issues/7)"
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
+    "name": "TCP/UDP Sockets",
+    "description": "Allow a WebExtension to act as a client and server socket APIs for TCP or UDP networking.",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 0
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 1,
+      "details": "Supportive: [bug #1247628](https://bugzilla.mozilla.org/show_bug.cgi?id=1247628)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [UDP Socket](https://github.com/mozilla/libdweb/issues/4), [TCP Socket](https://github.com/mozilla/libdweb/issues/5)"
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
+    "name": "Programmable custom protocol handlers",
+    "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
+    "doc": "programmable-custom-protocol-handlers",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 1,
+      "details": "<del>WIP: https://github.com/brave/muon/pull/507</del><br/>Supportive, but status unknown due to [move to Chromium](https://github.com/brave/browser-laptop/issues/9556#issuecomment-376943891)"
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 1,
+      "details": "Supportive: [bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [Protocol handler API](https://github.com/mozilla/libdweb/issues/2)"
     },
     "safari": {
       "level": 0
@@ -100,7 +148,7 @@
   },
 
   {
-    "name": "DNS lookup API",
+    "name": "DNS lookup",
     "description": "Allow WebExtensions to query DNS for `A`/`AAAA`/`TXT`/`SRV` records.",
     "doc": "dns-lookup-api",
     "beaker": {
@@ -117,7 +165,7 @@
     },
     "firefox": {
       "level": 1,
-      "details": "Support for `A`/`AAAA` lookups via [`browser.dns.resolve` API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/dns/resolve) ([Bug 1373640](https://bugzilla.mozilla.org/show_bug.cgi?id=1373640)).<br> Missing `SRV` ([Bug 14328](https://bugzilla.mozilla.org/show_bug.cgi?id=14328)) and `TXT` ([Bug 1449171](https://bugzilla.mozilla.org/show_bug.cgi?id=1449171))."
+      "details": "Support for `A`/`AAAA` lookups via [`browser.dns.resolve` API](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/dns/resolve) ([bug 1373640](https://bugzilla.mozilla.org/show_bug.cgi?id=1373640)).<br> Missing `SRV` ([bug 14328](https://bugzilla.mozilla.org/show_bug.cgi?id=14328)) and `TXT` ([bug 1449171](https://bugzilla.mozilla.org/show_bug.cgi?id=1449171))."
     },
     "safari": {
       "level": 0
