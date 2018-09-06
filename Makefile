@@ -71,7 +71,7 @@ dev: install css js
 
 deploy:
 	$(PREPEND)ipfs swarm peers >/dev/null || (echo "ipfs daemon must be online to publish" && exit 1)
-	ipfs add -r -q $(OUTPUTDIR) | tail -n1 >versions/current
+	ipfs add --cid-version 1 -r -q $(OUTPUTDIR) | tail -n1 >versions/current
 	cat versions/current >>versions/history
 	@export hash=`cat versions/current`; \
 		echo ""; \

@@ -5,7 +5,7 @@
   "scripts": {
     "test": "say sorry",
     "start": "hugo server -ws .",
-    "deploy": "hugo && ipfs add -r public"
+    "deploy": "hugo && ipfs add --cid-version 1 -r public"
   },
   "dependencies": {},
   "devDependencies": {
@@ -20,10 +20,10 @@
     "imagemin-cli": "^3.0.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
-    "imagemin-svgo": "^6.0.0",
-    "ipfs-css": "^0.3.0",
-    "less": "^2.7.2",
-    "less-plugin-autoprefix": "^1.5.1",
+    "imagemin-svgo": "^7.0.0",
+    "ipfs-css": "^0.7.0",
+    "less": "^3.8.1",
+    "less-plugin-autoprefix": "^2.0.0",
     "less-plugin-clean-css": "^1.5.1",
     "nodemon": "^1.11.0",
     "standard": "^11.0.1",
