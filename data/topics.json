@@ -8,7 +8,7 @@
     },
     "brave": {
       "level": 1,
-      "details": "Supportive: [brave/issues/9556](https://github.com/brave/browser-laptop/issues/9556)"
+      "details": "Supportive: [brave-browser/issues/819](https://github.com/brave/brave-browser/issues/819)"
     },
     "chrome": {
       "level": 0
