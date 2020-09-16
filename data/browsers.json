@@ -8,16 +8,20 @@
     "name": "Brave"
   },
   {
+    "id": "opera",
+    "name": "Opera"
+  },
+  {
+    "id": "firefox",
+    "name": "Firefox"
+  },
+  {
     "id": "chrome",
     "name": "Chrome"
   },
   {
     "id": "edge",
     "name": "Edge"
-  },
-  {
-    "id": "firefox",
-    "name": "Firefox"
   },
   {
     "id": "safari",

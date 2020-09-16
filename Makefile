@@ -1,7 +1,7 @@
 DOMAIN="arewedistributedyet.com"
 
 IPFSLOCAL="http://localhost:8080/ipfs/"
-IPFSGATEWAY="https://ipfs.io/ipfs/"
+IPFSGATEWAY="https://dweb.link/ipfs/"
 NPM=npm
 NPMBIN=./node_modules/.bin
 OUTPUTDIR=public
