@@ -18,7 +18,7 @@ This is work in progress. Some vendors support DWeb natively, some enable limite
 Users of the distributed web want to get content from a network of peers rather than a specific server.
 
 If the browser vendor does not support distributed web schemes natively,
-there should be an api that allows a WebExtension to register itself as **the handler for new protocols**, and can return responses to the browser.
+there should be an API that allows a WebExtension to register itself as **the handler for new protocols**, and can return responses to the browser.
 
 Right now, only possible to register custom protocols handlers statically, from the `manifest.json`, where a uri is mapped to a url template, and a separate, centralised service must be maintained to handler the mapping. The custom protocol handler can only redirect the user to an (http) url, it cannot return content directly to the browser. The redirect is visible in the browsers url bar, and the original uri is no longer visible to the user.
 
