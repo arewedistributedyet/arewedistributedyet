@@ -44,7 +44,7 @@ browser.protocol.registerStreamProtocol('ipfs', (request, callback) => {
 
 This example shows how you would add a handler for the `ipfs` protocol and have it return a file retrieved via the IPFS network as a stream to the browser.
 
-This is just a mockup based on prior art from Electron. The new API should leverage latest JS features, such as async iterators.
+This is just a mockup based on prior art from Electron. The new API should leverage the latest JS features, such as async iterators.
 
 ## Notes
 
