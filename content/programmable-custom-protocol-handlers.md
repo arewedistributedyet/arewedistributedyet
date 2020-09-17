@@ -22,7 +22,7 @@ there should be an API that allows a WebExtension to register itself as **the ha
 
 Right now, only possible to register custom protocols handlers statically, from the `manifest.json`, where a uri is mapped to a url template, and a separate, centralised service must be maintained to handler the mapping. The custom protocol handler can only redirect the user to an (http) url, it cannot return content directly to the browser. The redirect is visible in the browsers url bar, and the original uri is no longer visible to the user.
 
-## Need: more powerful API for browser extensions
+## Need: More powerful API for browser extensions
 
 Using [`protocol.registerStreamProtocol`][1] in Electron as a starting point:
 
