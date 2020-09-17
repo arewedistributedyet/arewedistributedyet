@@ -63,7 +63,7 @@
   },
 
   {
-    "name": "Origin isolation and Secure Context",
+    "name": "Origin Isolation and Secure Context",
     "description": "Correctly implement Origin isolation for DWeb URIs, or allow WebExtensions to control how Origin-based security context is defined.",
     "doc": "control-origin-security-context",
     "beaker": {
