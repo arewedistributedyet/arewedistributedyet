@@ -22,7 +22,7 @@
     },
     "firefox": {
       "level": 0,
-      "details": "Supportive, tracking APIs for p2p web applications in [bug 1435798](https://bugzilla.mozilla.org/show_bug.cgi?id=1435798)"
+      "details": "No signal of support in some time now: [protocol handler bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553) and [general p2p bug #1435798](https://bugzilla.mozilla.org/show_bug.cgi?id=1435798)."
     },
     "safari": {
       "level": 0
@@ -54,8 +54,8 @@
       "details": "Supportive, looking into protocol handlers as part of their PWA work"
     },
     "firefox": {
-      "level": 1,
-      "details": "Supportive: [bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [Protocol handler API](https://github.com/mozilla/libdweb/issues/2)"
+      "level": 0,
+      "details": "No signal of support in some time now:  [protocol handler bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553)<br/>In 2018 they prototyped API as a part of [libdweb](https://github.com/mozilla/libdweb): [Protocol handler API](https://github.com/mozilla/libdweb/issues/2) but it was just an experiment that never landed in Firefox Nightly."
     },
     "safari": {
       "level": 0
