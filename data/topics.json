@@ -119,7 +119,7 @@
 
   {
     "name": "Local Discovery",
-    "description": "Allow a WebExtension to do DNS-Based Service Discovery API as per [RFC6763](https://tools.ietf.org/html/rfc6763).",
+    "description": "Allow a WebExtension to do DNS-based Service Discovery API as per [RFC6763](https://tools.ietf.org/html/rfc6763).",
     "beaker": {
       "level": 0
     },
