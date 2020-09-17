@@ -8,7 +8,11 @@
     },
     "brave": {
       "level": 1,
-      "details": "Supportive: [brave-browser/issues/819](https://github.com/brave/brave-browser/issues/819)"
+      "details": "One-click install of IPFS in production. Work in progress on native `ipfs://` URI backed by either a public gateway or embedded go-ipfs support: [brave-browser/issues/10220](https://github.com/brave/brave-browser/issues/10220)"
+    },
+    "opera": {
+      "level": 1,
+      "details": "*Opera for Android* supports IPFS with a native handler for `ipfs://` URI that redirects to the HTTP gateway of your choosing. Read more: [IPFS in Opera for Android](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/)."
     },
     "chrome": {
       "level": 0
@@ -17,13 +21,76 @@
       "level": 0
     },
     "firefox": {
-      "level": 1,
-      "details": "Supportive, tracking APIs for p2p web applications in [bug 1435798](https://bugzilla.mozilla.org/show_bug.cgi?id=1435798)"
+      "level": 0,
+      "details": "No signal of support in some time now: [protocol handler bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553) and [general p2p bug #1435798](https://bugzilla.mozilla.org/show_bug.cgi?id=1435798)."
     },
     "safari": {
       "level": 0
     }
   },
+
+  {
+    "name": "Native or programmable custom protocol handlers",
+    "description": "Vendors who either support Distributed Web Schemes natively, or allow a browser extension to register itself as the handler for new protocols.",
+    "doc": "programmable-custom-protocol-handlers",
+    "beaker": {
+      "level": 2,
+      "details": "Built-in support for `dat://` and `hyper://` URIs"
+    },
+    "brave": {
+      "level": 2,
+      "details": "Work in progress on `ipfs://` and `ipns://` URI backed by either a public gateway or embedded go-ipfs support: [brave-browser/issues/10220](https://github.com/brave/brave-browser/issues/10220)"
+    },
+    "opera": {
+      "level": 2,
+      "details": "*Opera for Android* supports IPFS with a native handler for `ipfs://` URI that redirects to the HTTP gateway of your choosing. Read more: [IPFS in Opera for Android](https://blog.ipfs.io/2020-03-30-ipfs-in-opera-for-android/)."
+    },
+    "chrome": {
+      "level": 1,
+      "details": "*Chrome 86* [safelisted](https://blog.chromium.org/2020/09/chrome-86-improved-focus-highlighting.html) Distributed Web Schemes for redirect-based `registerProtocolHandler()`; [Protocol Labs](https://protocol.ai/) and [Igalia](https://igalia.com) work on improving protocol handler APIs in Chromium for both Web and WebExtension contexts."
+    },
+    "edge": {
+      "level": 1,
+      "details": "Supportive, looking into protocol handlers as part of their PWA work"
+    },
+    "firefox": {
+      "level": 0,
+      "details": "No signal of support in some time now:  [protocol handler bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553)<br/>In 2018 they prototyped API as a part of [libdweb](https://github.com/mozilla/libdweb): [Protocol handler API](https://github.com/mozilla/libdweb/issues/2) but it was just an experiment that never landed in Firefox Nightly."
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
+  {
+    "name": "Origin Isolation and Secure Context",
+    "description": "Correctly implement Origin isolation for DWeb URIs, or allow WebExtensions to control how Origin-based security context is defined.",
+    "doc": "control-origin-security-context",
+    "beaker": {
+      "level": 0
+    },
+    "brave": {
+      "level": 1,
+      "details": "Work in progress on native `ipfs://` URI: [brave-browser/issues/10220](https://github.com/brave/brave-browser/issues/10220)"
+    },
+    "opera": {
+      "level": 1,
+      "details": "*Opera for Android* provides native `ipfs://` and `ipns://` with subdomain gateways for Origin isolation"
+    },
+    "chrome": {
+      "level": 0
+    },
+    "edge": {
+      "level": 0
+    },
+    "firefox": {
+      "level": 0
+    },
+    "safari": {
+      "level": 0
+    }
+  },
+
 
   {
     "name": "WebRTC issues",
@@ -35,7 +102,8 @@
       "level": 0
     },
     "chrome": {
-      "level": 0
+      "level": 0,
+      "details": "Supportive"
     },
     "edge": {
       "level": 0
@@ -51,11 +119,14 @@
 
   {
     "name": "Local Discovery",
-    "description": "Allow a WebExtension to do DNS-Based Service Discovery API as per [RFC6763](https://tools.ietf.org/html/rfc6763).",
+    "description": "Allow a WebExtension to do DNS-based Service Discovery API as per [RFC6763](https://tools.ietf.org/html/rfc6763).",
     "beaker": {
       "level": 0
     },
     "brave": {
+      "level": 0
+    },
+    "opera": {
       "level": 0
     },
     "chrome": {
@@ -82,55 +153,7 @@
     "brave": {
       "level": 0
     },
-    "chrome": {
-      "level": 0
-    },
-    "edge": {
-      "level": 0
-    },
-    "firefox": {
-      "level": 1,
-      "details": "Supportive: [bug #1247628](https://bugzilla.mozilla.org/show_bug.cgi?id=1247628)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [UDP Socket](https://github.com/mozilla/libdweb/issues/4), [TCP Socket](https://github.com/mozilla/libdweb/issues/5)"
-    },
-    "safari": {
-      "level": 0
-    }
-  },
-
-  {
-    "name": "Programmable custom protocol handlers",
-    "description": "Allow a WebExtension to register itself as the handler for new protocols, and can return responses to the browser.",
-    "doc": "programmable-custom-protocol-handlers",
-    "beaker": {
-      "level": 0
-    },
-    "brave": {
-      "level": 1,
-      "details": "<del>WIP: https://github.com/brave/muon/pull/507</del><br/>Supportive, but status unknown due to [move to Chromium](https://github.com/brave/browser-laptop/issues/9556#issuecomment-376943891)"
-    },
-    "chrome": {
-      "level": 0
-    },
-    "edge": {
-      "level": 0
-    },
-    "firefox": {
-      "level": 1,
-      "details": "Supportive: [bug #1271553](https://bugzilla.mozilla.org/show_bug.cgi?id=1271553)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [Protocol handler API](https://github.com/mozilla/libdweb/issues/2)"
-    },
-    "safari": {
-      "level": 0
-    }
-  },
-
-  {
-    "name": "Control security context",
-    "description": "Allow WebExtensions to control how Origin-based security context is defined.",
-    "doc": "control-origin-security-context",
-    "beaker": {
-      "level": 0
-    },
-    "brave": {
+    "opera": {
       "level": 0
     },
     "chrome": {
@@ -140,7 +163,8 @@
       "level": 0
     },
     "firefox": {
-      "level": 0
+      "level": 0,
+      "details": "No signal of support in some time now. [Negative opinion on raw sockets Web API](https://github.com/mozilla/standards-positions/issues/431).<br/>In 2018 they prototyped API as a part of [libdweb](https://github.com/mozilla/libdweb): [UDP Socket](https://github.com/mozilla/libdweb/issues/4), [TCP Socket](https://github.com/mozilla/libdweb/issues/5), but the experiment was abandoned and did not land in Firefox Nightly."
     },
     "safari": {
       "level": 0
@@ -149,12 +173,15 @@
 
   {
     "name": "DNS lookup",
-    "description": "Allow WebExtensions to query DNS for `A`/`AAAA`/`TXT`/`SRV` records.",
+    "description": "Allow JS implementations and/or WebExtensions to query DNS for `A`/`AAAA`/`TXT`/`SRV` records.",
     "doc": "dns-lookup-api",
     "beaker": {
       "level": 0
     },
     "brave": {
+      "level": 0
+    },
+    "opera": {
       "level": 0
     },
     "chrome": {

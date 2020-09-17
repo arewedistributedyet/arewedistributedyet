@@ -5,18 +5,16 @@
   "scripts": {
     "test": "say sorry",
     "start": "hugo server -ws .",
+    "build": "hugo",
     "deploy": "hugo && ipfs add --cid-version 1 -r public"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@browser-logos/beaker": "^1.0.0",
-    "@browser-logos/brave": "^3.0.0",
-    "@browser-logos/chrome": "^1.0.4",
-    "@browser-logos/chromium": "^1.0.2",
-    "@browser-logos/edge": "^1.0.3",
-    "@browser-logos/electron": "^1.0.0",
-    "@browser-logos/firefox": "^2.0.0",
-    "@browser-logos/safari": "^1.0.2",
+    "@browser-logos/brave": "x",
+    "@browser-logos/chrome": "x",
+    "@browser-logos/edge": "x",
+    "@browser-logos/firefox": "x",
+    "@browser-logos/opera": "x",
+    "@browser-logos/safari": "x",
     "imagemin-cli": "^3.0.0",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
@@ -30,6 +28,7 @@
     "tachyons": "^4.11.1",
     "uglify-js": "^3.4.9"
   },
+  "private": true,
   "author": "olizilla",
   "license": "MIT"
 }
