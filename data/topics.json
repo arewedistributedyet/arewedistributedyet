@@ -164,7 +164,7 @@
     },
     "firefox": {
       "level": 1,
-      "details": "Supportive: [bug #1247628](https://bugzilla.mozilla.org/show_bug.cgi?id=1247628)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [UDP Socket](https://github.com/mozilla/libdweb/issues/4), [TCP Socket](https://github.com/mozilla/libdweb/issues/5). On the other hand [negative position](https://github.com/mozilla/standards-positions/issues/431#event-3756882378) regarding raw sockets in regular Web API."
+      "details": "Supportive: [bug #1247628](https://bugzilla.mozilla.org/show_bug.cgi?id=1247628)<br/>Prototyping API as a part of [libdweb](https://github.com/mozilla/libdweb): [UDP Socket](https://github.com/mozilla/libdweb/issues/4), [TCP Socket](https://github.com/mozilla/libdweb/issues/5). On the other hand, [negative position](https://github.com/mozilla/standards-positions/issues/431#event-3756882378) regarding raw sockets in regular Web API."
     },
     "safari": {
       "level": 0
