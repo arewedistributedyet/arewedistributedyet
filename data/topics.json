@@ -35,7 +35,7 @@
     "doc": "programmable-custom-protocol-handlers",
     "beaker": {
       "level": 2,
-      "details": "Built in support for `dat://` and `hyper://` URIs"
+      "details": "Built-in support for `dat://` and `hyper://` URIs"
     },
     "brave": {
       "level": 2,
