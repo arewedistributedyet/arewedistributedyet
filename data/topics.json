@@ -8,7 +8,7 @@
     },
     "brave": {
       "level": 1,
-      "details": "One-click install of IPFS in production. Work in progress on native `ipfs://` URI backed by either a public gateway or embedded go-ipfs support: [brave-browser/issues/10220](https://github.com/brave/brave-browser/issues/10220)"
+      "details": "WebTorrent enabled by default since 2016. One-click install of IPFS. Work in progress on native `ipfs://` URI backed by either a public gateway or embedded go-ipfs support: [brave-browser/issues/10220](https://github.com/brave/brave-browser/issues/10220)."
     },
     "opera": {
       "level": 1,
