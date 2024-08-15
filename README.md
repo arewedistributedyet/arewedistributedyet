@@ -1,4 +1,4 @@
-# Are we distributed yet?
+# [Are we distributed yet?]()
 
 _Let's unlock the peer-to-peer web_ ⚡🌐🔑
 
@@ -12,7 +12,7 @@ _Let's unlock the peer-to-peer web_ ⚡🌐🔑
 - `make deploy` - Add `./public` to [IPFS]
 - `make help` - For more info
 
-Built with [hugo], styled with [tachyons] & [ipfs-css]
+Built with [hugo], styled with [tachyons] & [ipfs-css].
 
 ## Contributing
 
