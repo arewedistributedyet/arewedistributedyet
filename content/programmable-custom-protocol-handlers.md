@@ -1,6 +1,6 @@
 ---
 title: "Protocol Handlers for DWeb URIs"
-date: 2020-09-16T19:22+02:00
+date: 2020-09-16T19:22:00+02:00
 ---
 
 This is work in progress. Some vendors support DWeb natively, some enable limited support via browser extensions:
