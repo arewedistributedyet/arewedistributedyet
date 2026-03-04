@@ -64,11 +64,11 @@ resolving.then(resolved);
   It is impossible to perform lookups for other record types such as `SRV` ([Bug 14328](https://bugzilla.mozilla.org/show_bug.cgi?id=14328)) or `TXT` ([Bug 1449171](https://bugzilla.mozilla.org/show_bug.cgi?id=1449171)).
 
 
-[1]: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/dns/resolve 
+[1]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/dns/resolve 
 [2]: https://www.ietf.org/rfc/rfc2782.txt
 [3]: http://www.gushi.org/make-dns-cert/howto.html
 [4]: https://support.google.com/a/answer/183895?hl=en
 [5]: http://redirect.name/
 [6]: https://ipfs.io/docs/examples/example-viewer/example#../websites/README.md
 [7]: https://developers.google.com/speed/public-dns/docs/dns-over-https
-[8]: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/webRequest/onBeforeRequest
+[8]: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webRequest/onBeforeRequest
