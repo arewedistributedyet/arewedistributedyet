@@ -1,3 +1,20 @@
+> [!IMPORTANT]
+> **This site is no longer maintained and the repository is archived.**
+>
+> The data stops at November 2020 and there will not be another update, so
+> <https://arewedistributedyet.com> serves that notice in place of the browser
+> table. The Wayback Machine has the
+> [site as it was then](https://web.archive.org/web/20201112003835/https://arewedistributedyet.com/),
+> and the data behind it is still in `data/topics.json`.
+>
+> Work on native peer-to-peer support in browsers continues in
+> [IPFS in Web Browsers](https://github.com/ipfs/in-web-browsers/#readme).
+>
+> The repository can be unarchived, but only for a named maintainer who commits
+> to keeping it up. If that is you, reach out to the
+> [IPFS Foundation](https://ipfsfoundation.org/about/) on the
+> [IPFS forum](https://discuss.ipfs.tech/).
+
 # [Are we distributed yet?]()
 
 _Let's unlock the peer-to-peer web_ ⚡🌐🔑

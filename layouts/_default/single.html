@@ -3,12 +3,8 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class='sans-serif ma0'>
+<body class='sans-serif ma0 bg-washed-yellow'>
   {{ partial "header.html" . }}
-  <div class="Doc ph3 ph0-l" role="main">
-    <h1>{{ .Title }}</h1>
-    {{ .Content }}
-  </div>
-  {{ partial "footer.html" . }}
+  {{ partial "archived.html" . }}
 </body>
 </html>
